@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WDW Wait Alerts — know when the queue drops</title>
+<meta name="description" content="Free Android app that pings you the second a ride's wait drops, when it's back up after a breakdown, and when lightning is about to pause rides. Unofficial.">
+<meta property="og:title" content="WDW Wait Alerts — know when the queue drops">
+<meta property="og:description" content="Get pinged the second a ride's wait drops. Free on Android.">
+<meta property="og:image" content="https://robertthwaite.github.io/wdw-wait-alerts-privacy/og.png">
+<meta property="og:url" content="https://robertthwaite.github.io/wdw-wait-alerts-privacy/get.html">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 108 108'%3E%3Crect width='108' height='108' rx='24' fill='%230284c7'/%3E%3Cpath d='M27,38a7,7 0 0,1 14,0v33a7,7 0 0,1-14,0z' fill='%23fff' fill-opacity='.6'/%3E%3Cpath d='M46,52a7,7 0 0,1 14,0v19a7,7 0 0,1-14,0z' fill='%23fff'/%3E%3Cpath d='M70,38L70,68M61,57.5L70,68.5L79,57.5' stroke='%23FB923C' stroke-width='10' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3E%3C/svg%3E">
+<style>
+  /* Where every ad and bio link lands. One job: get an Android user to the
+     Play listing. Meta refuses app-store URLs on Traffic ads, and in-app
+     browsers (Instagram, TikTok) fumble a direct Play link, so this page
+     sits in between. */
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { background: #0C4A6E; }
+  body {
+    min-height: 100vh; min-height: 100dvh; color: #fff;
+    font: 17px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: linear-gradient(170deg, #38BDF8 0%, #0284c7 30%, #0C4A6E 75%, #0a3d5c 100%);
+  }
+  .wrap { max-width: 30rem; margin: 0 auto; padding: 44px 22px 36px; text-align: center; }
+  .logo { width: 104px; height: 104px; filter: drop-shadow(0 12px 22px rgba(4,34,47,.35)); }
+  h1 { font-size: 2.3rem; line-height: 1.05; letter-spacing: -.02em; margin: 18px 0 8px; font-weight: 800; }
+  .tag { font-size: 1.25rem; font-weight: 700; color: #FFD7B5; }
+  .cta {
+    display: flex; align-items: center; justify-content: center; gap: 12px;
+    margin: 30px auto 10px; max-width: 22rem; min-height: 64px; padding: 14px 24px;
+    border-radius: 999px; background: #FB923C; color: #2A1206; text-decoration: none;
+    font-size: 1.2rem; font-weight: 800; box-shadow: 0 16px 36px rgba(42,18,6,.3);
+  }
+  .cta:active { transform: scale(.98); }
+  .cta svg { width: 26px; height: 26px; flex: none; }
+  .note { font-size: .92rem; color: rgba(255,255,255,.85); }
+  ul { list-style: none; margin: 30px 0 0; display: grid; gap: 12px; text-align: left; }
+  li { display: flex; gap: 14px; align-items: flex-start; padding: 16px 18px; border-radius: 18px;
+    background: rgba(7,23,34,.28); backdrop-filter: blur(6px); }
+  li svg { width: 26px; height: 26px; flex: none; margin-top: 2px; fill: none; stroke: #FFD7B5;
+    stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+  li b { display: block; font-size: 1.02rem; }
+  li span { font-size: .93rem; color: rgba(255,255,255,.85); }
+  .cta.second { margin-top: 28px; }
+  footer { margin-top: 30px; font-size: .8rem; color: rgba(255,255,255,.75); }
+  footer a { color: #fff; }
+</style>
+</head>
+<body>
+<main class="wrap">
+  <svg class="logo" viewBox="21 21 66 66" aria-hidden="true">
+    <path d="M27,38 a7,7 0 0,1 14,0 v33 a7,7 0 0,1 -14,0 z" fill="#fff" fill-opacity=".62"/>
+    <path d="M46,52 a7,7 0 0,1 14,0 v19 a7,7 0 0,1 -14,0 z" fill="#fff" fill-opacity=".95"/>
+    <path d="M70,38 L70,68" stroke="#FB923C" stroke-width="10" stroke-linecap="round" fill="none"/>
+    <path d="M61,57.5 L70,68.5 L79,57.5" stroke="#FB923C" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </svg>
+  <h1>WDW Wait Alerts</h1>
+  <p class="tag">Know when the queue drops.</p>
+
+  <a class="cta play" href="https://play.google.com/store/apps/details?id=com.wdwwaitalerts.app">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4.5v15l13-7.5z" fill="#2A1206"/></svg>
+    Get it free on Google Play
+  </a>
+  <p class="note">Android only, for now.</p>
+
+  <ul>
+    <li><svg viewBox="0 0 24 24"><path d="M12 5v14"/><path d="m18 13-6 6-6-6"/></svg>
+      <div><b>Wait-drop alerts</b><span>Pick a ride and a number. We ping you the moment it drops.</span></div></li>
+    <li><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>
+      <div><b>Back up and running</b><span>Know the second a closed ride reopens, before the queue catches up.</span></div></li>
+    <li><svg viewBox="0 0 24 24"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg>
+      <div><b>Lightning heads-ups</b><span>Satellite lightning detection warns you before outdoor rides pause.</span></div></li>
+    <li><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.2 1.9"/></svg>
+      <div><b>Which park is quietest</b><span>Live busyness against each park's normal, plus a crowd calendar.</span></div></li>
+  </ul>
+
+  <a class="cta play second" href="https://play.google.com/store/apps/details?id=com.wdwwaitalerts.app">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4.5v15l13-7.5z" fill="#2A1206"/></svg>
+    Get it free on Google Play
+  </a>
+
+  <footer>
+    Unofficial app · not affiliated with or endorsed by Disney<br>
+    <a href="./">Privacy policy</a>
+  </footer>
+</main>
+<script>
+  // Pass the ad's source through to Play, so Play Console's acquisition
+  // report says where each install came from: get.html?utm_source=meta
+  // becomes &referrer=utm_source%3Dmeta%26... on the store link.
+  (function () {
+    var q = new URLSearchParams(location.search), parts = [];
+    ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content'].forEach(function (k) {
+      if (q.get(k)) parts.push(k + '=' + q.get(k));
+    });
+    if (!parts.length) parts.push('utm_source=site');
+    var ref = encodeURIComponent(parts.join('&'));
+    document.querySelectorAll('a.play').forEach(function (a) { a.href += '&referrer=' + ref; });
+  })();
+</script>
+</body>
+</html>
